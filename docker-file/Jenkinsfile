@@ -2,16 +2,10 @@ pipeline {
   agent {
     docker { image nginx:latest }
   }
-  stages {
-    stage("Test") {
+  stages{
+    stage('qwqwd'){
       steps{
-        sh "nginx --version"
-      }
-    }
-    stage("Test 1") {
-      steps{
-        sh 'docker ps -a'
+        echo 'hello world'
       }
     }
   }
-}
