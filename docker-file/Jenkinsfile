@@ -1,11 +1,9 @@
 pipeline{
-    agent{
-        docker {image nginx:latest}
-    }
+    agent any
     stages{
-        stage('Build'){
+        stage("TEST"){
             steps{
-                echo 'hello world'
+                ls -a
             }
         }
     }
