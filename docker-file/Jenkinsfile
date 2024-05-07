@@ -1,11 +1,12 @@
-pipeline {
-  agent {
-    docker { image nginx:latest }
-  }
-  stages{
-    stage('qwqwd'){
-      steps{
-        echo 'hello world'
-      }
+pipeline{
+    agent{
+        docker {image nginx:latest}
     }
-  }
+    stages{
+        stage('Build'){
+            steps{
+                echo 'hello world'
+            }
+        }
+    }
+}
