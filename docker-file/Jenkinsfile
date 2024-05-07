@@ -8,7 +8,7 @@ pipeline {
         sh "nginx --version"
       }
     }
-    stage("Test") {
+    stage("Test 1") {
       steps{
         sh 'docker ps -a'
       }
